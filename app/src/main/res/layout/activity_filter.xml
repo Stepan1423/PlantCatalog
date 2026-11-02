@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Освещение:"
+        android:textStyle="bold"/>
+
+    <RadioGroup
+        android:id="@+id/lightRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/lightAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Любое" android:checked="true"/>
+        <RadioButton android:id="@+id/lightSun" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Солнце"/>
+        <RadioButton android:id="@+id/lightPartial" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Полутень"/>
+        <RadioButton android:id="@+id/lightShade" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Тень"/>
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Полив:"
+        android:textStyle="bold"
+        android:layout_marginTop="16dp"/>
+
+    <RadioGroup
+        android:id="@+id/wateringRadioGroup"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton android:id="@+id/waterAll" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Любой" android:checked="true"/>
+        <RadioButton android:id="@+id/waterRare" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Редкий"/>
+        <RadioButton android:id="@+id/waterModerate" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Умеренный"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/applyFilterButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Применить фильтр" />
+
+</LinearLayout>
